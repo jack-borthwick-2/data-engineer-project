@@ -91,7 +91,7 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error("error moving data into internal bucket. Exception:"+ str(e))
         raise
-#NOTE Only movies_metadata is copied and munged in this scrip,t as the other table ares not necessary at this timeself.
+#NOTE Only movies_metadata is copied and munged in this script, as the other table ares not necessary at this time.
 #NOTE In production ALL OTHER tables would be copied to S3 Glacier via Boto3 as well
 
     #SECOND AIRFLOW STAGE
